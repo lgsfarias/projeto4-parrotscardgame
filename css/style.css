@@ -11,6 +11,7 @@ body {
 header {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 40px auto;
@@ -22,7 +23,14 @@ header {
     letter-spacing: -0.004em;
     color: #75B79E;
 }
-
+header p{
+    align-self: flex-end;
+    margin-right: 20px;
+    color: red;
+    font-size: 30px;
+    line-height: 30px;
+}
+/* tabuleiro */
 main {
     padding-left: 34px;
     display: flex;
@@ -33,6 +41,7 @@ main {
     width: 100vw;
     margin: 10px auto;
 }
+/* cartas */
 .carta{
     margin-right: 34px;	
     margin-bottom: 34px;
@@ -67,4 +76,17 @@ main {
 
 .cartaFrente{
     transform: rotateY(180deg);
+}
+
+/* versão mobile */
+@media (max-width: 425px){
+    header{
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+    }
+    main{
+        flex-direction: column;
+        flex-wrap: none;
+    }
 }
