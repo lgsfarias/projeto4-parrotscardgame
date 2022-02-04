@@ -65,6 +65,7 @@ main {
     border: 1px solid #99CEA8;
     border-radius: 5px;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 .carta img {
     width: 100px;
