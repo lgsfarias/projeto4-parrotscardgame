@@ -63,9 +63,10 @@ function viraCarta (carta) {
                     clearInterval(myTimer); // encerra o cronômetro na tela
                     setTimeout( () => {
                         alert(`acabou em ${contador*2} jogadas e em ${document.querySelector("header p").innerHTML} segundos!`); // emite um alerta com o numero de jogadas e o tempo que o usuário levou
-                        let novamente=prompt("quer jogar novamente? (s ou n)") ; // pergunta se o usuário quer jogar novamente
-                        while (novamente!=="s" && novamente !== "n" && novamente!== null){ // verifica se foi uma resposta válida
-                            let novamente=prompt("quer jogar novamente? (s ou n)");
+                        const novamenteOptions = ["s","n",null];
+                        let novamente=prompt("quer jogar novamente? (s ou n)").toLowerCase() ; // pergunta se o usuário quer jogar novamente
+                        while (!novamenteOptions.includes(novamente)){ // verifica se foi uma resposta válida
+                            novamente=prompt("quer jogar novamente? (s ou n)").toLowerCase();
                         }
                         if(novamente=="s"){ // caso responda com "s" o jogo reinicia
                             iniciar();
