@@ -1,1 +1,6 @@
-Meu segundo projeto com JavaScript é a implementação do jogo Parrot Card Game, um jogo da memória temático com aleatoridade, efeitos e transição, responsividade e papagaios dançantes!
+# Parrot Card Game
+
+## My second JavaScript project is the implementation of the Parrot Card Game, a themed memory game with randomness, effects and transition, responsive design and dancing parrots!
+
+## How it works
+<img src="./gif/demo-funcionamento.gif">
